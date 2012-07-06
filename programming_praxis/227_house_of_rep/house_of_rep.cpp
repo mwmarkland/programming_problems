@@ -2,7 +2,7 @@
 
 // Here are the state populations.
 
-#include <vector>
+#include <list>
 #include <string>
 #include <cmath>
 
@@ -22,7 +22,7 @@ State::State(std::string nm, uint32_t pop) : name(nm), population(pop),
   geometric_mean = population / sqrt(repCount * (repCount + 1));
 }
 
-std::vector<State> list = { {"Alabama",4779736}, {"Alaska",710231},
+std::list<State> list = { {"Alabama",4779736}, {"Alaska",710231},
 			    {"Arizona",6392017}, {"Arkansas",2915918}, 
 			    {"California",37253956}, {"Colorado",5029196},
 			    {"Connecticut",3574097}, {"Delaware",897934},
