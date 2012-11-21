@@ -12,7 +12,3 @@ void State::update(void)
   geometric_mean = population / sqrt(repCount * (repCount + 1));
 }
 
-bool order_state::operator() (const State& state1, const State& state2) const
-{
-}
-
